@@ -1,6 +1,5 @@
 
-const ACTIVITIES_API = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/activity/';
-const ACTIVITIES_CODESPACE_ENDPOINT = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/activity/codespace_endpoint/';
+const ACTIVITIES_API = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/activity/codespace_endpoint/';
 
 function Activities() {
   const [activities, setActivities] = useState([]);
