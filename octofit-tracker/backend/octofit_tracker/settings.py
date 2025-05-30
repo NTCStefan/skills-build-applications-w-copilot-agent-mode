@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-mlh0$zb-#cqr%)nprr0-_3sj^&l$f&4coyuzd*cq!y^cd&zrl%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "*",
+    "localhost",
+    "127.0.0.1",
+    "ominous-train-v66pw964ppx6fx569-8000.app.github.dev",
+]
 
 
 # Application definition

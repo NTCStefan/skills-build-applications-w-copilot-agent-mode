@@ -31,12 +31,13 @@ router.register(r'leaderboard', LeaderboardViewSet)
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/'
     return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activity': '/activity/',
-        'workouts': '/workouts/',
-        'leaderboard': '/leaderboard/',
+        'users': base_url + 'users/',
+        'teams': base_url + 'teams/',
+        'activity': base_url + 'activity/',
+        'workouts': base_url + 'workouts/',
+        'leaderboard': base_url + 'leaderboard/',
     })
 
 urlpatterns = [
