@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
 
 const ACTIVITIES_API = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/activity/';
+const ACTIVITIES_CODESPACE_ENDPOINT = 'https://ominous-train-v66pw964ppx6fx569-8000.app.github.dev/api/activity/codespace_endpoint/';
 
 function Activities() {
   const [activities, setActivities] = useState([]);
@@ -17,6 +17,11 @@ function Activities() {
       <div className="card">
         <div className="card-body">
           <h2 className="card-title mb-4">Activities</h2>
+          <div className="mb-3">
+            <a href={ACTIVITIES_CODESPACE_ENDPOINT} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              Codespace API Endpoint
+            </a>
+          </div>
           <div className="table-responsive">
             <table className="table table-striped table-hover">
               <thead className="table-dark">
