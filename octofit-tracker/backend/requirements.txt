@@ -1,0 +1,2 @@
+# OctoFit Tracker backend requirements
+Django>=4.0
